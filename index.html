@@ -3,6 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>amy wilford | web developer</title>
         <meta name="description" content="">
@@ -10,9 +11,10 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;700&family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     </head>
     <body>
         <header>
@@ -29,58 +31,73 @@
             </div>     
         </header>
         <section class="banner">
+            <div class="socials">
+                <a href=#><img class="logo" src="images/linkined-logo-g.png" alt="linked linkedin logo"></a>
+                <a href=#><img class="logo" src="images/github-logo-g.png" alt="linked github logo"></a>    
+            </div>
             <h1>amy wilford</h1>
             <h2>ready to design & build your website</h2>
-            <a href=#><img class="logo" src="images/linkined-logo-g.png" alt="linked linkedin logo"></a>
-            <a href=#><img class="logo" src="images/github-logo-g.png" alt="linked github logo"></a>
-        </section>
-        <section class="about-section">
-            <div class="bio">
-                <h3>Bio</h3>
+            </section>
+           
+            </section>
+        <section class="about">
+            <div class="bio card">
                 <p>This is a bio about Amy.This is a bio about Amy.This is a bio about Amy.This is a bio about Amy.This is a bio about Amy.This is a bio about Amy.This is a bio about Amy.This is a bio about Amy.This is a bio about Amy.This is a bio about Amy.This is a bio about Amy.This is a bio about Amy.</p>
             </div>
-            <div class="skills">
-                <h3>Skills</h3>
-                <ul>
-                    <li>HTML/CSS</li>
-                    <li>Javascript</li>
-                    <li>jQuery</li>
-                    <li>Responsive/Mobile Design</li>
-                    <li>SEO</li>
-                    <li>Git Version Control</li>
-                    <li>Wordpress Development</li>
-                </ul>
-            </div>
-            <div class="profile">
+            <div class="card">
                 <img class="profile-pic" src="images/profile.png" alt="profile photo">
-                <figcaption>Amy Wilford <br> Web Developer </figcaption>
+                <div class= "button">
+                    <button>contact amy</button>
+                </div>
+            </div>
+            <hr>
+            <div class="skills card">
+                <h3>skills:</h3>
+                    <p>HTML/CSS</p>
+                    <p>Javascript</p>
+                    <p>jQuery</p>
+                    <p>Responsive/Mobile Design</p>
+                    <p>SEO</p>
+                    <p>Git Version Control</p>
+                    <p>Wordpress Development</p>
             </div>
         </section>
-        <section class="project-section">
-            <h3>Projects</h3>
-            <div class=project>
-                <h4>Gary's Bike Stop</h4>
-                <span>coming soon</span>
+        <section class="all-projects card">
+            <hr>
+            <h3>projects:</h3>
+            <div class="project pkew">
+                <h4 class="pTitle">Pkewx3</h4>
+                <span class="details">
+                    text about the project to appear with java
+                </span> 
             </div>
-            <div class=project>
-                <h4>Pkewx3</h4>
-                <span>coming soon</span>
+            <div class="project gary">
+                <h4 class="pTitle">Gary's Bike Stop</h4>
+                <span class="details">
+                    text about the project to appear with java
+                </span> 
             </div>
-            <div class=project>
-                <h4>Hops</h4>
-                <span>coming soon</span>
+            <div class="project hops">
+                <h4 class="pTitle">Hops</h4> 
+                <span class="details">
+                    text about the project to appear with java
+                </span>       
             </div>
-            <div class=project>
-                <h4>Phil's Pulls</h4>
-                <span>coming soon</span>
+            <div class="project gpo">
+                <h4 class="pTitle">Green Party of Ontario <br> Bay of Quinte</h4>
+                <span class="details">
+                    text about the project to appear with java
+                </span> 
             </div>
         </section>
         <footer>
-            <a href=#about>about</a>
-            <a href=#projects>projects</a>
-            <a href=#contact>contact</a>
-            <a href=#><img class="logo" src="images/linkedin-logo.png" alt="linked linkedin logo"></a>
-            <a href=#><img class="logo" src="images/github-logo.png" alt="linked github logo"></a>
+            <div class="nav-foot">
+                <a href=#about>about</a>
+                <a href=#projects>projects</a>
+                <a href=#contact>contact</a>
+                <a href=#><img class="logo" src="images/linkedin-logo.png" alt="linked linkedin logo"></a>
+                <a href=#><img class="logo" src="images/github-logo.png" alt="linked github logo"></a>    
+            </div>
         </footer>
         <script src="script.js" async defer>
         </script>
