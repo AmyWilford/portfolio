@@ -11,26 +11,36 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;700&family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     </head>
     <body>
         <header>
             <div class="nav">
-                <a href=#about>about</a>
-                <a href=#projects>projects</a>
-                <a href=#contact>contact</a>
-                <a href=#><img class="icon" src="images/linkedin-logo.png" alt="linked linkedin logo"></a>
-                <a href=#><img class="icon" src="images/github-logo.png" alt="linked github logo"></a>
+                <a href ="home" class="active">| aw |</a>
+                <div id="myLinks">
+                    <a href=#about>about</a>
+                    <a href=#projects>projects</a>
+                    <a href="contact.html">contact</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+            </div>     
         </header>
-        <main class="banner">
-            <h1>I'm Amy  <br> here to build & design your website</h1>
-        </main>
+        <section class="banner">
+            <h1>amy wilford</h1>
+            <h2>ready to design & build your website</h2>
+            <a href=#><img class="logo" src="images/linkined-logo-g.png" alt="linked linkedin logo"></a>
+            <a href=#><img class="logo" src="images/github-logo-g.png" alt="linked github logo"></a>
+        </section>
         <section class="about-section">
             <div class="bio">
-                <h2>Bio</h2>
+                <h3>Bio</h3>
                 <p>This is a bio about Amy.This is a bio about Amy.This is a bio about Amy.This is a bio about Amy.This is a bio about Amy.This is a bio about Amy.This is a bio about Amy.This is a bio about Amy.This is a bio about Amy.This is a bio about Amy.This is a bio about Amy.This is a bio about Amy.</p>
             </div>
             <div class="skills">
-                <h2>Skills</h2>
+                <h3>Skills</h3>
                 <ul>
                     <li>HTML/CSS</li>
                     <li>Javascript</li>
@@ -47,21 +57,21 @@
             </div>
         </section>
         <section class="project-section">
-            <h2>Projects</h2>
+            <h3>Projects</h3>
             <div class=project>
-                <h3>Gary's Bike Stop</h3>
+                <h4>Gary's Bike Stop</h4>
                 <span>coming soon</span>
             </div>
             <div class=project>
-                <h3>Pkewx3</h3>
+                <h4>Pkewx3</h4>
                 <span>coming soon</span>
             </div>
             <div class=project>
-                <h3>Hops</h3>
+                <h4>Hops</h4>
                 <span>coming soon</span>
             </div>
             <div class=project>
-                <h3>Phil's Pulls</h3>
+                <h4>Phil's Pulls</h4>
                 <span>coming soon</span>
             </div>
         </section>
@@ -69,9 +79,10 @@
             <a href=#about>about</a>
             <a href=#projects>projects</a>
             <a href=#contact>contact</a>
-            <a href=#><img class="icon" src="images/linkedin-logo.png" alt="linked linkedin logo"></a>
-            <a href=#><img class="icon" src="images/github-logo.png" alt="linked github logo"></a>
+            <a href=#><img class="logo" src="images/linkedin-logo.png" alt="linked linkedin logo"></a>
+            <a href=#><img class="logo" src="images/github-logo.png" alt="linked github logo"></a>
         </footer>
-        <script src="" async defer></script>
+        <script src="script.js" async defer>
+        </script>
     </body>
 </html>
