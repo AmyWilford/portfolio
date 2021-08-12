@@ -1,3 +1,4 @@
+/*Universal Styles*/
 body {
     color: #010224;
     font-family: 'Source Sans Pro', sans-serif;
@@ -7,52 +8,95 @@ body {
 h1 h2 h3 {
     font-family: 'Poppins', sans-serif;
 }
-.nav {
-    overflow: hidden;
-    position: relative;
-}
-.nav #myLinks {
-    display: none;
-}
-.nav a{
-    background-color: #010224;
-    color:white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 16px;
-    display: block;
-}
-.nav a.icon {
-    background-color:#010224;
-    color:white;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-#myLinks a:hover {
-    color: #57F1B1;
-}
 
-.active {
-    letter-spacing: .15em;
-    font-weight: lighter;
+/*Nav Menu Mobile*/
+@media only screen and (max-width: 800px) {
+    .nav {
+        overflow: hidden;
+        position: relative;
+    }
+    .nav #myLinks {
+        display: none;
+    }
+    .nav a{
+        background-color: #010224;
+        color:white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 16px;
+        display: block;
+    }
+    .nav a.icon {
+        background-color:#010224;
+        color:white;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    #myLinks a:hover {
+        color: #57F1B1;
+    }
+    .active {
+        letter-spacing: .15em;
+        font-weight: lighter;
+    }
+    .active:hover {
+        color:#57F1B1;
+    }
+    .fa:hover {
+        color:#57F1B1;
+    }
 }
-.active:hover {
-    color:#57F1B1;
+/*Nav Menu-Tablet & Desktop*/
+@media only screen and (min-width: 801px) {
+    .nav {
+        background-color: #010224;
+        color: white;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .active {
+        color: white;
+        font-size: 18px;
+        padding: 15px;
+    }
+    .active:hover {
+        color:#57F1B1;
+    }
+    .nav a{
+        text-decoration: none;
+        text-align: right;
+        font-size: 18px;
+    }
+
+    #myLinks {
+        display: flex;
+    }
+    #myLinks a{
+        padding: 15px;
+        color: white;
+    }
+    #myLinks a:hover {
+        color:#57F1B1;
+    }
+    .icon {
+        display: none;
+    }
 }
-.fa:hover {
-    color:#57F1B1;
-}
+/* Site Content Styles */
 h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: lighter;
     letter-spacing: .08em;
     font-size: 3.75em;
     text-transform: uppercase;
+    text-align: center;
 }
 h2 {
     font-size: 2.25em;
+    text-align: center;
 }
 h3 {
     font-weight: 600;
@@ -64,18 +108,13 @@ h4 {
     letter-spacing: .10em;
     font-size: 1.5em;
 }
-
 .logo {
     width: 25px;
     padding: 2px;
 }
-.socials {
-    display:flex;
-    justify-content:flex-start;
-}
-
 section.banner {
     background-color: #57F1B1;
+    padding: 60px 15px;
 }
 section {
     padding: 15px;
@@ -117,8 +156,8 @@ button {
 }
 button:hover {
     background-color:#010224;
-    color:white;
-    border: 2px solid white;
+    color:#57F1B1;
+    border: 2px solid #57F1B1;
 }
 .all-projects {
     display: flex;
@@ -158,6 +197,7 @@ footer {
     padding: 20px;
     color: white;
     display: flex;
+    font-size: 18px;
 }
 .nav-foot {
     display: flex;
@@ -169,14 +209,15 @@ footer a{
     text-decoration: none;
 }
 .nav-foot a:hover {
-    text-decoration: underline;
     color:#57F1B1;
 }
 footer a:visited {
     color: white;
 }
+
 /*Media Query - tablet*/
 @media only screen and (min-width: 750px) {
+
     h1 {
         font-size: 4em;
     }
@@ -192,6 +233,7 @@ footer a:visited {
         width: 40%;
         margin: 15px;
     }
+}
 /*Media Query - computer screen*/
 @media only screen and (min-width: 1000px) {
     .about {
