@@ -49,24 +49,22 @@ h1 {
     font-weight: lighter;
     letter-spacing: .08em;
     font-size: 3.75em;
-    text-align: right;
+    text-transform: uppercase;
 }
 h2 {
-    font-size: 2.5em;
-    font-weight: lighter;
-    text-align: right;
+    font-size: 2.25em;
 }
 h3 {
     font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
 }
 h4 {
     text-transform: uppercase;
     letter-spacing: .10em;
     font-size: 1.5em;
 }
-hr {
-    border: 0.01px solid #010224;
-}
+
 .logo {
     width: 25px;
     padding: 2px;
@@ -75,11 +73,19 @@ hr {
     display:flex;
     justify-content:flex-start;
 }
+
 section.banner {
     background-color: #57F1B1;
 }
 section {
     padding: 15px;
+}
+hr {
+    margin: 30px;
+}
+.bio {
+    line-height:2em;
+    margin: 0px 50px;
 }
 .card {
     padding-bottom: 20px;
@@ -88,21 +94,36 @@ section {
 .profile-pic{
     width: 250px;
 }
+.mobile-profile-pic {
+    display:none;
+}
 .button {
-    align-content: center;
+   text-align: center;
+   background-color: #010224;
+   color: white;
+   padding: 20px;
+   text-transform: uppercase;
 }
 button {
     border-radius: 10px;
     background-color: white;
+    background-color: #57F1B1;
     border: 2px solid #010224;
-    padding: 10px;
+    padding: 15px;
     color: #010224;
-    letter-spacing: .20em;
-    width: 40%;
+    letter-spacing: .10em;
+    min-width: 40%;
+    font-size: 1em;
 }
 button:hover {
     background-color:#010224;
     color:white;
+    border: 2px solid white;
+}
+.all-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .project {
     border-radius:15px;
@@ -111,27 +132,27 @@ button:hover {
     margin-bottom: 15px;
     height: 300px;
     text-align: left;
+    max-width: 400px;
+    align-self: center;
 }
 
 .gary {
-    background: linear-gradient(to bottom, rgba(255, 253, 253, .95), rgba(1, 2, 36, .25)), url(images/bikes.jpeg);
+    background: linear-gradient(to bottom, rgba(255, 253, 253, 1), rgba(1, 2, 36, .25)), url(images/bikes.jpeg);
     background-position: center;
 }
 .hops {
-    background: linear-gradient(to bottom, rgba(255, 253, 253, .95), rgba(1, 2, 36, .25)), url(images/hops2.jpeg);
+    background: linear-gradient(to bottom, rgba(255, 253, 253, 1), rgba(1, 2, 36, .25)), url(images/hops-2.png);
     background-position: center;
 }
 .pkew {
-    background: linear-gradient(to bottom, rgba(255, 253, 253, .95), rgba(1, 2, 36, .25)), url(images/pkew2.jpeg);
+    background: linear-gradient(to bottom, rgba(255, 253, 253, 1), rgba(1, 2, 36, .25)), url(images/pkew2.jpeg);
     background-position: center;
 }
 .gpo {
-    background: linear-gradient(to bottom, rgba(255, 253, 253, .95), rgba(1, 2, 36, .25)), url(images/gpo.png);
+    background: linear-gradient(to bottom, rgba(255, 253, 253, 1), rgba(1, 2, 36, .25)), url(images/gpo-2.png);
     background-position: center;
 }
-.details {
 
-}
 footer {
     background-color: #010224;
     padding: 20px;
@@ -150,9 +171,57 @@ footer a{
 .nav-foot a:hover {
     text-decoration: underline;
     color:#57F1B1;
-
 }
 footer a:visited {
     color: white;
 }
-
+/*Media Query - tablet*/
+@media only screen and (min-width: 750px) {
+    h1 {
+        font-size: 4em;
+    }
+    h2 {
+        font-size: 2.75em;
+    }
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .project {
+        width: 40%;
+        margin: 15px;
+    }
+/*Media Query - computer screen*/
+@media only screen and (min-width: 1000px) {
+    .about {
+        display: flex;
+        align-items:initial;
+        justify-content: space-evenly;
+    }
+    .bio{
+        width: 60%;
+    }
+    .skills {
+        width: 30%;
+    }
+    .card-container {
+        display: flex;
+    }
+    .project {
+        width: 15%;
+    }
+    .profile-pic {
+        display: none;
+    }
+    .mobile-profile-pic {
+        display:block;
+        width: 250px;
+    }
+    .button {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+}
