@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>amy wilford | web developer</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="nav">
+                <a href ="index.html" class="active">| aw |</a>
+                <div id="myLinks">
+                    <a href="index.html#about">about</a>
+                    <a href="index.html#all-projects">projects</a>
+                    <a href="contact.html">contact</a>
+                    <a href="https://www.linkedin.com/in/amy-wilford-bb2a5453" target="_blank"><img class="logo" src="images/linkedin-logo.png" alt="linked linkedin logo"></a>
+                    <a href="https://github.com/AmyWilford" target="_blank"><img class="logo" src="images/github-logo.png" alt="linked github logo"></a>    
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+            </div>     
+        </header>
+        <section class="contact-page">
+            <h2>contact:</h2>
+            <span>Let's get the ball rolling...tell me about your project. -</span>
+            <form id="contact-form" method="post" action="" onsubmit="return false">
+                <input type="text" placeholder="Your Name" id="name"/>
+                <br><br>
+                <input type="email" placeholder="Your Email" id="email"/>
+                <br><br>
+                <span>Tell me about your project and timeline.</span>
+                <br>
+                <textarea id="message" rows="5"></textarea>
+                <br><br>
+                <button onclick="sendContact();">send email</button>
+            </form>
+        </section>
+        <footer>
+            <div class="nav-foot">
+                <a href="index.html#about">about</a>
+                <a href="index.html#all-projects">projects</a>
+                <a href="contact.html">contact</a>
+                <a href="https://www.linkedin.com/in/amy-wilford-bb2a5453" target="_blank"><img class="logo" src="images/linkedin-logo.png" alt="linked linkedin logo"></a>
+                <a href="https://github.com/AmyWilford" target="_blank"><img class="logo" src="images/github-logo.png" alt="linked github logo"></a>    
+            </div>
+        </footer>
+        <script src="script.js" async defer>
+        </script>
+    </body>
+</html>

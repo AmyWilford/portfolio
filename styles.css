@@ -13,7 +13,8 @@ h1 h2 h3 {
 @media only screen and (max-width: 800px) {
     .nav {
         overflow: hidden;
-        position: relative;
+        position: fixed;
+        width: 100%;
     }
     .nav #myLinks {
         display: none;
@@ -38,7 +39,6 @@ h1 h2 h3 {
         color: #57F1B1;
     }
     .active {
-        letter-spacing: .15em;
         font-weight: lighter;
     }
     .active:hover {
@@ -56,6 +56,8 @@ h1 h2 h3 {
         display: flex;
         width: 100%;
         justify-content: space-between;
+        position: fixed;
+        width: 100%;
     }
     .active {
         color: white;
@@ -91,7 +93,6 @@ h1 {
     font-weight: lighter;
     letter-spacing: .08em;
     font-size: 3.75em;
-    text-transform: uppercase;
     text-align: center;
 }
 h2 {
@@ -118,9 +119,6 @@ section.banner {
 }
 section {
     padding: 15px;
-}
-hr {
-    margin: 30px;
 }
 .bio {
     line-height:2em;
@@ -159,7 +157,7 @@ button:hover {
     color:#57F1B1;
     border: 2px solid #57F1B1;
 }
-.all-projects {
+#all-projects {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -219,7 +217,7 @@ footer a:visited {
 @media only screen and (min-width: 750px) {
 
     h1 {
-        font-size: 4em;
+        font-size: 4.5em;
     }
     h2 {
         font-size: 2.75em;
@@ -236,7 +234,7 @@ footer a:visited {
 }
 /*Media Query - computer screen*/
 @media only screen and (min-width: 1000px) {
-    .about {
+    #about {
         display: flex;
         align-items:initial;
         justify-content: space-evenly;
@@ -246,12 +244,15 @@ footer a:visited {
     }
     .skills {
         width: 30%;
+        border: solid 2px #010224;
+        line-height: 1em;
     }
     .card-container {
         display: flex;
     }
     .project {
-        width: 15%;
+        width: 17%;
+        height: 200px;
     }
     .profile-pic {
         display: none;
@@ -266,4 +267,8 @@ footer a:visited {
         justify-items: center;
         align-items: center;
     }
+}
+/*Contact Form Styles*/
+.placeholderRed {
+    color: red;
 }
