@@ -9,6 +9,7 @@ function myFunction() {
     }
   }
 
+
   // contact page form
   var fields ={};
   document.addEventListener("formContent", function() {
