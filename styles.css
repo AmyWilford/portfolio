@@ -17,7 +17,7 @@ h1 h2 h3 {
         width: 100%;
         z-index: 1;
     }
-    .nav #myLinks {
+    .nav #navLinks {
         display: none;
     }
     .nav a{
@@ -36,7 +36,7 @@ h1 h2 h3 {
         right: 0;
         top: 0;
     }
-    #myLinks a:hover {
+    #navLinks a:hover {
         color: #57F1B1;
         cursor: pointer;
     }
@@ -78,14 +78,14 @@ h1 h2 h3 {
         font-size: 18px;
     }
 
-    #myLinks {
+    #navLinks {
         display: flex;
     }
-    #myLinks a{
+    #navLinks a{
         padding: 15px;
         color: white;
     }
-    #myLinks a:hover {
+    #navLinks a:hover {
         color:#57F1B1;
         cursor: hover;
     }
@@ -115,7 +115,7 @@ h4 {
     letter-spacing: .10em;
     font-size: 1.5em;
 }
-.logo {
+.logo, .logo-green{
     width: 25px;
     padding: 2px;
 }
