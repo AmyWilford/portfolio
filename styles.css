@@ -146,6 +146,15 @@ h4 {
     width: 25px;
     padding: 2px;
 }
+.linked:hover {
+    background-color: #57F1B1;
+    border-radius: 10px;
+}
+.git:hover {
+    background-color: #57F1B1;
+    border-radius: 15px;
+}
+
 section.banner {
     background-color: #57F1B1;
     padding: 80px 15px 150px 15px;
